@@ -1,13 +1,13 @@
 Task1: Deep Vs Shallow
 Task 1-1: Simulate a Function
 
-https://github.com/laxman2405/DeepLearning_HW1/blob/main/Laxman_Madipadige_HW1_Sim ulated_Function.ipynb
+https://github.com/laxman2405/DeepLearning_HW1/blob/main/Laxman_Madipadige_HW1_Simulated_Function.ipynb
 
 Common Properties for all Models in both functions:
 We have used ReLU as the activation function because of its simplicity and capability to learn complex patterns and it is applied at each layer in the forward function. We have used the pytorch Adam algorithm for computing the optimizer and nn.MSELoss() to compute the loss function for the models. Total number of epochs is 20000 with a learning ratio of 0.001.
 
-Function1: sin(x) + x**2 Below is the screenshot of the function defined, which takes in a single argument ‘x’ and returns the computed result.We generate 2 sets of values for training and validation. X_train has 4000 values spaced between -2 to +2 and x_Actual has 2000 values spaced between -2 to +2. Y_train and y_actual will get the values from above function. Below is the graph for the function which shows a U-shaped curve, having minimum value at -0.5 and maximum value as the input value increases. First set of Deep Neural Network Models for Function-1:
-
+Function1: sin(x) + x**2 Below is the screenshot of the function defined, which takes in a single argument ‘x’ and returns the computed result.We generate 2 sets of values for training and validation. X_train has 4000 values spaced between -2 to +2 and x_Actual has 2000 values spaced between -2 to +2. Y_train and y_actual will get the values from above function. Below is the graph for the function which shows a U-shaped curve, having minimum value at -0.5 and maximum value as the input value increases. 
+First set of Deep Neural Network Models for Function-1:
 Below are the defined 3 DNN models which are used for approximating the proposed function mentioned above.
 
 DNN_1 Model description:
@@ -23,8 +23,8 @@ Overall Comments:
 If we observe the graph, along with the losses at convergence point, we can see that the Model1 has a graph which is more accurate to the actual graph because of its more number of hidden layers. Since Model2 and Model3 have less number of hidden layers, it was unable to achieve the accuracy that model1 has achieved.
 
 
-Function2: sign(sin(5*pi*x) Below is the screenshot showing a new function that again takes in a single argument ‘x’ and returns the computed result. We generate 2 sets of values for training and validation. X_train has 6000 values spaced between -1 to +1 and x_Actual has 2000 values spaced between -1 to +1. Y_train and y_actual will get the values from above function. Below is the graph for the function which is discrete and step-wise because of the sign function along with logarithmic sin function. Second set of Deep Neural Network Models for Function-2:
-
+Function2: sign(sin(5*pi*x) Below is the screenshot showing a new function that again takes in a single argument ‘x’ and returns the computed result. We generate 2 sets of values for training and validation. X_train has 6000 values spaced between -1 to +1 and x_Actual has 2000 values spaced between -1 to +1. Y_train and y_actual will get the values from above function. Below is the graph for the function which is discrete and step-wise because of the sign function along with logarithmic sin function. 
+Second set of Deep Neural Network Models for Function-2:
 Below are the defined 3 DNN models which are used for approximating the proposed function2 mentioned above.
 
 NonLinear_DNN_1 Model description:
@@ -40,7 +40,7 @@ Overall Comments:
 As we can see from the above plot, though all the models are trained with almost the same parameters, model1 plots the most accurate curve with less loss and high accuracy because of the many hidden layers along with the complex architecture it has. Next, followed by Model3 and Model2 have predicted the ground truth accurately.
 
 Task 1-2: Train on Actual Tasks 
-https://github.com/laxman2405/DeepLearning_HW1/blob/main/Laxman_Madipadige_HW1_Trai n_Actual_Task.ipynb 
+https://github.com/laxman2405/DeepLearning_HW1/blob/main/Laxman_Madipadige_HW1_Train_Actual_Task.ipynb 
 
 We used MNIST data set to get the training and testing data and using a data loader, loaded 128 and 64 batch size train and test data. Constructed 3 CNN models for image classification which are described below.
 
@@ -63,7 +63,7 @@ All the models have reduced loss rate on increasing epoch values. Model1, though
 
 Task-2: Optimization
 Task 2-1: Visualize Optimization Process 
-https://github.com/laxman2405/DeepLearning_HW1/blob/main/Laxman_Madipadige_HW2_Visu alize_Optimization.ipynb 
+https://github.com/laxman2405/DeepLearning_HW1/blob/main/Laxman_Madipadige_HW2_Visualize_Optimization.ipynb 
 
 We load the MNIST data set by applying normalization and getting the train loader and test loader for batches of sizes 128 and 64.
 
@@ -83,7 +83,7 @@ Left graph shows how the weights are clustered near the origin, showing low vari
 
 Task 2-2: Observe gradient norm during training
 
-https://github.com/laxman2405/DeepLearning_HW1/blob/main/Laxman_Madipadige_HW2_Gra dient_Norm.ipynb
+https://github.com/laxman2405/DeepLearning_HW1/blob/main/Laxman_Madipadige_HW2_Gradient_Norm.ipynb
 
 In this task, I have chosen the target function to be sin(x) + x.This function generates 100000 values for x_train ranging from 1 to 10 and 50000 values for x_actual ranging from 1 to 10 . Both the y_actual and y_train will get values by invoking the function. Defined a model with an input layer, three hidden layers and a single output layer with ReLU as the activation function. Also, having Adam for optimizer and using nn.MSELoss() to compute the loss function.
 
@@ -94,7 +94,7 @@ If we observe both the plot graphs above, the gradient norm gradually increases 
 
 Task 2-3: What happened when Gradient is Almost Zero
 
-https://github.com/laxman2405/DeepLearning_HW1/blob/main/Laxman_Madipadige_HW2_At_ Gradient_Zero.ipynb
+https://github.com/laxman2405/DeepLearning_HW1/blob/main/Laxman_Madipadige_HW2_At_Gradient_Zero.ipynb
 
 We use the function as cos(x)/x and created a neural network model to train against data. We constructed a function compute_minimal_ratio_losses and compute_gradient. Compute_gradient will calculate the L2 norm of the gradient for the given model parameters.
 
@@ -107,7 +107,7 @@ As we observe in the above plot, as the minimal ratio is increasing its value, t
 Task-3: Generalization
 Task 3-1: Can the network fit random labels?
 
-https://github.com/laxman2405/DeepLearning_HW1/blob/main/Laxman_Madipadige_HW3_Ran dom_Labels.ipynb
+https://github.com/laxman2405/DeepLearning_HW1/blob/main/Laxman_Madipadige_HW3_Random_Labels.ipynb
 
 In this task, we aim for randomly generated labels for the MNIST dataset and train the neural network model. We use transforms.Compose to normalize the data with a mean of 0.13 and standard deviation of 0.30. Then after normalizing we download the dataset into current ./data folder into the training data. We replace the actual integer labels of the training set with the randomly generated integer labels. Train and test loader are generated for batch processing with batch sizes of 128 and 64 respectively.
 
@@ -118,7 +118,7 @@ Overall Comments:
 From the above graph, we can see that train loss has a decrease in it’s values which signifies that the model is training the random labels correctly, but the test loss goes on increasing signifies the inability to generalize the random data. This is an example of overfitting, because the model was unable to learn patterns from the training data leading to poor performance on test data for the randomly generated labels.
 
 Task 3-2: Number of Parameters Vs Generalization
-https://github.com/laxman2405/DeepLearning_HW1/blob/main/Laxman_Madipadige_HW3_Par ameters_Vs_Generalization.ipynb
+https://github.com/laxman2405/DeepLearning_HW1/blob/main/Laxman_Madipadige_HW3_Parameters_Vs_Generalization.ipynb
 
 We load the MNIST dataset by applying normalization and loading the train and test loader with batch size of 128 each. I have defined a total of 11 models to train with one input layer with size 784, one hidden and one output layer mapped to 10 neurons. Below are the characteristics of each model.
 
@@ -131,7 +131,7 @@ If we observe the loss and accuracy until the parameter range of 10000, the loss
 
 Task 3-3-1: Flatness Vs Generalization - Part: 1
 
-https://github.com/laxman2405/DeepLearning_HW1/blob/main/Laxman_Madipadige_HW3_Flat ness_Vs_Generalization_1.ipynb
+https://github.com/laxman2405/DeepLearning_HW1/blob/main/Laxman_Madipadige_HW3_Flatness_Vs_Generalization_1.ipynb
 
 Loaded the MNIST data set by normalizing the set with mean of 0.1307 and standard deviation of 0.3081 and since we have to train the model for 2 different batches, we defined the train and test loader for 2 batch sizes of 128 and 512.
 Defined the CNN model with 2 convolutional network layers and 2 fully connected layers. First conv1 has 8 filters and second has 16 filters, having kernel size of 3, with max pooling size of 2x2 applied on both the convolutional layers will reduce the size to 784. The final output layer has 10 filters. ReLU activation function is used and returns the final value using log_softmax. Constructed a training model to compute the losses and accuracies. The training model is run for 15 epochs on both the batches of the training set. Optimizer Adam with learning ratio of 1e-2 and crossEntropyLoss() loss function is passed to the function as parameters.
@@ -141,7 +141,7 @@ Overall Comments:
 As we can see, the model is well trained for both the batches. Because, though the loss and accuracy on both the batches started off rough, the loss gradually reduced resulting in increase in accuracy for both the batches. As the alpha values approaches closely we can observe that loss is reduced and accuracy is increased, showing the model is well trained and both train and test data move very closely indicating the model generalizes well and there is negligible chance of overfitting.
 
 Task 3-3-2: Flatness vs Generalization Part-2: 
-https://github.com/laxman2405/DeepLearning_HW1/blob/main/Laxman_Madipadige_HW3_Flat ness_Vs_Generalization_2.ipynb 
+https://github.com/laxman2405/DeepLearning_HW1/blob/main/Laxman_Madipadige_HW3_Flatness_Vs_Generalization_2.ipynb 
 
 Constructed the CNN model with 2 convolutional layers, 2 fully connected layers. First conv1 has 8 filters and second one has 16 filters, with kernel size as 3. Input to the first fully connected layer is reduced to 784 and the final fully connected layer outputs 10 filters. Both the convolutional layers go through a 2 max poolings size of 2x2 which reduces the size by half.
 Training and testing models are defined to compute the losses and accuracies and run for 10 epochs. We load the MNIST data set by performing normalization and generating 5 train and test loaders of different batch sizes. For few batch sizes we use optimizer Adam with learning ratio of 0.001 and for few we used optimizer SGD with learning ratio of 0.01.
