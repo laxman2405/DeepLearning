@@ -1,4 +1,5 @@
 Task1: Deep Vs Shallow
+
 Task 1-1: Simulate a Function
 
 https://github.com/laxman2405/DeepLearning_HW1/blob/main/Laxman_Madipadige_HW1_Simulated_Function.ipynb
@@ -62,6 +63,7 @@ Overall Comments:
 All the models have reduced loss rate on increasing epoch values. Model1, though it started off with higher loss and lower accuracy, as the training is going on both loss and accuracy have improved. Model2 performs well by improving its efficiency from the beginning itself compared to model1. Model3 is the most efficient because it has the lowest loss and highest accuracy from the first compared to other models showing very less overfitting.
 
 Task-2: Optimization
+
 Task 2-1: Visualize Optimization Process 
 https://github.com/laxman2405/DeepLearning_HW1/blob/main/Laxman_Madipadige_HW2_Visualize_Optimization.ipynb 
 
@@ -105,6 +107,7 @@ Overall Comments:
 As we observe in the above plot, as the minimal ratio is increasing its value, the losses changes are very minimal. Although, there are a couple of points where the losses are high, but since we trained the model for 100 times and only twice the loss was high. Also, at the end of minimal ratio at around 0.080, the loss recorded was close to zero, resembling that the model is well trained and performed.
 
 Task-3: Generalization
+
 Task 3-1: Can the network fit random labels?
 
 https://github.com/laxman2405/DeepLearning_HW1/blob/main/Laxman_Madipadige_HW3_Random_Labels.ipynb
